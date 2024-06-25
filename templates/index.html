@@ -1,0 +1,31 @@
+<!-- landing page for receipt -->
+<header>
+    <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Risiti Logo">
+
+</header>
+
+{% extends "base.html" %}
+
+{% block title %}
+    Risiti - Home
+{% endblock %}
+
+{% block content %}
+    
+    <h1>Welcome to Risiti!</h1>  
+    
+    <h2> Risiti provides a digital solution for managing receipts, <strong> invoices, 
+        reports, and quotations</strong>, <br> 
+        helping to streamline your business processes.</h2>
+  
+    <h2 class="border">Main Features:</h2>
+    <ul style="list-style-type: none;">
+        <li>Receipt Editing and Management</li>
+        <li>Customizable Templates</li>
+        <li>Single-Page Dashboard</li>
+        <li>Print to PDF</li>
+    </ul>
+    
+    
+    
+{% endblock %}

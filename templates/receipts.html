@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Risiti - Receipts
+{% endblock %}
+
+{% block content %}
+    <h1>Receipts</h1>
+    <div class="receipt-container">
+        <!-- Example of displaying a receipt -->
+        <div class="receipt" style="cursor: pointer;" onclick="this.style.transform = 'scale(1.2)'">
+            <!-- Receipt content goes here -->
+        </div>
+        <!-- Repeat this block for each receipt -->
+        <img src="static/images/logo.PNG" alt="">
+    </div>
+{% endblock %}

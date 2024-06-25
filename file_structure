@@ -1,0 +1,22 @@
+risiti/
+│
+├── app.py
+├── models.py
+├── templates/
+│ ├── index.html
+│ ├── receipts.html
+│ ├── new_receipt.html
+│ └── base.html
+├── static/
+│ ├── css/
+│ │ └── style.css
+│ └── js/
+│ └── script.js
+├── migrations/
+│ └── ... # Database migration scripts (if using Flask-Migrate)
+├── config.py
+├── requirements.txt
+├── README.md
+├── PRD.md
+├── BRD.md
+└── nginx.conf

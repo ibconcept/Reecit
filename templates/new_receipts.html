@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Risiti - New Receipt
+{% endblock %}
+
+{% block content %}
+    <h1>Create New Receipt</h1>
+    <form action="/generate_pdf" method="post" enctype="multipart/form-data">
+        <label for="logo">Upload Logo:</label>
+        <input type="file" id="logo" name="logo"><br>
+
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name"><br>
+
+        <label for="company_address">Address:</label>
+        <input type="text" id="company_address" name="company_address"><br>
+
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" name="telephone"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="client_name">Client Name:</label>
+        <input type="text" id="client_name" name="client_name"><br>
+
+        <label for="item1_name">Item 1:</label>
+        <input type="text" id="item1_name" name="item1_name">
+        <label for="item1_price">Price:</label>
+        <input type="text" id="item1_price" name="item1_price"><br>
+
+        <label for="item2_name">Item 2:</label>
+        <input type="text" id="item2_name" name="item2_name">
+        <label for="item2_price">Price:</label>
+        <input type="text" id="item2_price" name="item2_price"><br>
+
+        <label for="item3_name">Item 3:</label>
+        <input type="text" id="item3_name" name="item3_name">
+        <label for="item3_price">Price:</label>
+        <input type="text" id="item3_price" name="item3_price"><br>
+
+        <label for="item4_name">Item 4:</label>
+        <input type="text" id="item4_name" name="item4_name">
+        <label for="item4_price">Price:</label>
+        <input type="text" id="item4_price" name="item4_price"><br>
+
+        <label for="item5_name">Item 5:</label>
+        <input type="text" id="item5_name" name="item5_name">
+        <label for="item5_price">Price:</label>
+        <input type="text" id="item5_price" name="item5_price"><br>
+
+        <input type="submit" value="Generate PDF">
+    </form>
+{% endblock %}

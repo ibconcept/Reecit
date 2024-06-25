@@ -1,0 +1,99 @@
+/* static/css/style.css */
+
+/* Colors */
+:root {
+    --primary-color: #8f57fd; /* Purple */
+    --secondary-color: #00b0ff; /* Blue */
+    --accent-color: #ff6f61; /* Red */
+    --background-color: #f0f0f0; /* Light grey */
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: var(--background-color);
+    margin: 5vw;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Forms */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .logo {
+width: 11vw;
+border-radius: 22px;
+  }
+
+   h2 {    
+    color: var(--accent-color);
+    border-radius: 5px;
+    font-size: large;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00b0ff;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Borders */
+  .border {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .receipt-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.receipt {
+    width: 30vw;
+    aspect-ratio: 3/4; /* Set the aspect ratio to 3:4 */
+    border: 1px solid #ccc;
+    /* Additional styling for receipt */
+}
+
+
+
+
+  /* JavaScript Compatibility Fixes */
+  /* Add your JavaScript compatibility fixes here */
+  
+  /* SEO Improvements */
+  /* Add your SEO improvements here */
+  

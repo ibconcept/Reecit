@@ -1,0 +1,3 @@
+# pip3 install mysqlclient
+# history >> history_commands.txt
+# (check dependiceies there on history session!!)
