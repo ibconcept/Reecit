@@ -82,14 +82,10 @@ border-radius: 22px;
 }
 
 .receipt {
-    width: 30vw;
-    aspect-ratio: 3/4; /* Set the aspect ratio to 3:4 */
+    width: 30vw;    
     border: 1px solid #ccc;
     /* Additional styling for receipt */
 }
-
-
-
 
   /* JavaScript Compatibility Fixes */
   /* Add your JavaScript compatibility fixes here */

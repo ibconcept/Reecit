@@ -1,34 +1,31 @@
-<!-- : Base HTML template that other templates can extend from. 
-    This file typically contains the common structure 
-    and elements shared across multiple pages. -->
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>{% block title %} {% endblock %}</title>
-         <!-- Material-UI CSS -->
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Reecit{% endblock %}</title>
+    <!-- Material-UI CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Your custom CSS file -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
 
- </head>
-
- <body>
-     <h1>Welcome to Risiti!</h1>  
-     <p class="border"><br>Get started with:
-        <button class="button" onclick="window.location.href='receipts.html'">My Receipts</button>
-        <button class="button" onclick="window.location.href='new-receipt.html'">Create New Receipt</button>
-        <button class="button" onclick="window.location.href='templates.html'">Templates</button>
+<body>
+    <h1>Welcome to Reecit!</h1>
+    <h3>Make your document easy</h3>
+    <p class="border"><br>Get started with:
+        <a class="button" href="{{ url_for('index') }}"> Home </a>
+        <a class="button" href="{{ url_for('new_receipt') }}">Create New Receipt</a>
+        <a class="button" href="{{ url_for('list_receipts') }}">My Receipts</a>
+        
     </p>
-     {% block content %}    {% endblock %}
-     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block content %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
-     <footer class="border">
+    <footer class="border">
         <p>Contact us: support@risiti.com</p>
     </footer>
-
- </body>
- </html>
+</body>
+</html>
