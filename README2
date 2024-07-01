@@ -1,6 +1,6 @@
-# Risiti - Paperless Receipt Management System
+# reecit - Paperless Receipt Management System
 
-Risiti is a Flask-based web application designed to manage receipts digitally, reducing paper usage. It allows users to create, edit, and manage receipts, invoices, reports, and quotations. 
+reecit is a Flask-based web application designed to manage receipts digitally, reducing paper usage. It allows users to create, edit, and manage receipts, invoices, reports, and quotations. 
 
 ## Setup Instructions
 

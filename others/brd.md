@@ -1,4 +1,4 @@
-# Risiti - Business Requirements Document
+# reecit - Business Requirements Document
 
 ## Business Goals
 - Reduce paper usage by digitizing receipt management processes.

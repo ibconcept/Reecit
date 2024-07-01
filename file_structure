@@ -1,7 +1,8 @@
-risiti/
+reecit/
 │
 ├── app.py
-├── models.py
+├── forms.py #forms.py defines how data is collected from users.
+├── models.py #models.py defines how data is stored in the database.
 ├── templates/
 │ ├── index.html
 │ ├── receipts.html
@@ -20,3 +21,4 @@ risiti/
 ├── PRD.md
 ├── BRD.md
 └── nginx.conf
+

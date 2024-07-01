@@ -1,10 +1,10 @@
-# risiti
+# reecit
 Quickest receipt generator, 
-# Risiti - Quick Receipt Generator
+# reecit - Quick Receipt Generator
 
 ## Overview
 
-Welcome to Risiti, a fast and efficient receipt generator application built with AngularJS and TypeScript. Risiti enables users to swiftly create and customize professional-looking receipts for various purposes.
+Welcome to reecit, a fast and efficient receipt generator application built with AngularJS and TypeScript. reecit enables users to swiftly create and customize professional-looking receipts for various purposes.
 
 ## Features
 
@@ -26,7 +26,7 @@ Welcome to Risiti, a fast and efficient receipt generator application built with
 ## Getting Started
 
 1. **Access the App:**
-   - Visit [Risiti Receipt Generator](#) to access the one-page app.
+   - Visit [reecit Receipt Generator](#) to access the one-page app.
 
 2. **Input Company Details:**
    - Enter your company name in the designated field.
@@ -47,7 +47,7 @@ Welcome to Risiti, a fast and efficient receipt generator application built with
 
 ## Example Usage
 
-Here's a quick example of how to use Risiti:
+Here's a quick example of how to use reecit:
 
 1. Input Company Name: My Business Inc.
 2. Upload Logo: [Upload Logo Image]
@@ -59,7 +59,7 @@ Here's a quick example of how to use Risiti:
 
 ## Tech Stack
 
-Risiti is built with:
+reecit is built with:
 - AngularJS
 - TypeScript
 

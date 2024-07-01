@@ -15,17 +15,18 @@
 <body>
     <h1>Welcome to Reecit!</h1>
     <h3>Make your document easy</h3>
-    <p class="border"><br>Get started with:
-        <a class="button" href="{{ url_for('index') }}"> Home </a>
+    <div class="border"><br>
+        <p>Get started with:</p>
+       <div><a class="button" href="{{ url_for('index') }}"> Home </a></div> 
         <a class="button" href="{{ url_for('new_receipt') }}">Create New Receipt</a>
         <a class="button" href="{{ url_for('list_receipts') }}">My Receipts</a>
         
-    </p>
+</div>
     {% block content %}{% endblock %}
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
     <footer class="border">
-        <p>Contact us: support@risiti.com</p>
+        <p>Contact us: support@reecit.com</p>
     </footer>
 </body>
 </html>

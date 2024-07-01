@@ -1,5 +1,19 @@
-<!-- Install Dependencies:
+9. Add Additional Routes
+If you plan to expand your app, you might need additional routes. Add them to app.py and ensure you handle different scenarios based on your requirements.
 
+10. Configure Nginx (for Production)
+Make sure your Nginx configuration is correctly set up for your domain and points to your Flask app.
+
+nginx.conf
+
+Add Error Handling for File Uploads
+Ensure the allowed_file function checks the extension correctly and the generate_pdf function handles image placement.
+
+6. Add Helper Function for Image Validation
+Your allowed_file function checks for valid image file types. Make sure it’s set to check png, jpg, and jpeg files.
+
+
+<!-- Install Dependencies:
 Install the required Python packages listed in your requirements.txt file:
 bash
 Copy code

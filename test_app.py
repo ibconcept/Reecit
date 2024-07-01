@@ -5,7 +5,7 @@ import os
 # Add the parent directory of the script to the sys.path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from main import app, db, Receipt
+from app import app, db, Receipt
 
 @pytest.fixture
 def client():

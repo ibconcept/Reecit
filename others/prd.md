@@ -1,7 +1,7 @@
-# Risiti - Product Requirements Document
+# reecit - Product Requirements Document
 
 ## Purpose
-The purpose of Risiti is to provide a digital solution for managing receipts, invoices, reports, and quotations. It aims to reduce paper usage and streamline the receipt management process.
+The purpose of reecit is to provide a digital solution for managing receipts, invoices, reports, and quotations. It aims to reduce paper usage and streamline the receipt management process.
 
 ## Target Audience
 - Small businesses

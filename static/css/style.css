@@ -59,6 +59,7 @@ border-radius: 22px;
     color: #fff;
     text-decoration: none;
     border: none;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
