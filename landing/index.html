@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reecit - Receipt Management Made Easy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+    <style>
+        :root {
+            --primary-color: #8f57fd; /* Purple */
+            --secondary-color: #00b0ff; /* Blue */
+            --accent-color: #ff6f61; /* Red */
+            --background-color: #f0f0f0; /* Light grey */
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: var(--background-color);
+            margin: 0;
+            text-align: center;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .logo {
+            width: 11vw;
+            border-radius: 22px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        a{
+            text-decoration: none;
+            color: none;
+        }
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+
+        .feature {
+            width: 20%;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature .material-icons {
+            font-size: 4em;
+            color: var(--secondary-color);
+        }
+
+        .cta {
+            padding: 50px 0;
+        }
+
+        .cta .button {
+            font-size: 1.2em;
+            padding: 15px 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+          
+            <img  src="static/images/logo.png" alt="Reecit Logo" class="logo">
+            <h1>Welcome to Reecit</h1>
+            <a href="landing_page.html">
+            <h2>Your ultimate solution for managing receipts and other docs effortlessly.</h2>
+        </a> 
+        </div>
+    </div>
+
+    <div class="container">
+        <h3> With reecit you can handle  feature such as</h3>
+        <section class="features">
+            <div class="feature">
+                <span class="material-icons">create</span>
+                <h2>Create Receipt</h2>
+                <p>Effortlessly create new receipts with all the necessary details.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">edit</span>
+                <h2>Edit Receipt</h2>
+                <p>Edit and update your receipts with just a few clicks.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">share</span>
+                <h2>Share Receipt</h2>
+                <p>Share your receipts securely with anyone, anytime.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">transfer_within_a_station</span>
+                <h2>Transfer</h2>
+                <p>Seamlessly transfer receipts between accounts.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">update</span>
+                <h2>Update</h2>
+                <p>Keep your receipts up to date with real-time updates.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">group</span>
+                <h2>Collaborate</h2>
+                <p>Work together on receipts with team collaboration features.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">cloud_upload</span>
+                <h2>Store</h2>
+                <p>Store your receipts securely in the cloud.</p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">file_upload</span>
+                <h2>Upload</h2>
+                <p>Upload your physical receipts to the cloud easily.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Get Started with Reecit</h2>
+            <p>Sign up today and take control of your receipts.</p>
+            <a href="/login" class="button">Login</a>
+            <a href="/register" class="button">Sign Up</a>
+        </section>
+
+        <section class="links">
+            <a href="https://github.com/ibconcept/Reecit" target="_blank">GitHub Repository</a>
+            <a href="https://ibconcept.github.io/reecit/home" target="_blank">Project’s Landing Page</a>
+            <a href="https://www.linkedin.com/in/williammaina/" target="_blank">LinkedIn Profile</a>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Reecit. All rights reserved.</p>
+            <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
