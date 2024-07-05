@@ -63,7 +63,10 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        
+        a{
+            text-decoration: none;
+            color: none;
+        }
         .button:hover {
             background-color: var(--secondary-color);
         }
@@ -71,12 +74,12 @@
         .hero {
             background-color: var(--primary-color);
             color: white;
-            padding: 50px 0;
+            padding: 30px 0;
         }
 
         .hero h1 {
             font-size: 2.5em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .features {
@@ -147,15 +150,17 @@
 <body>
     <div class="hero">
         <div class="container">
-            <img src="static/images/logo.png" alt="Reecit Logo" class="logo">
+          
+            <img  src="static/images/logo.png" alt="Reecit Logo" class="logo">
             <h1>Welcome to Reecit</h1>
-            <p>Your ultimate solution for managing receipts and other docs effortlessly.</p>
-           
+            <a href="landing_page.html">
+            <h2>Your ultimate solution for managing receipts and other docs effortlessly.</h2>
+        </a> 
         </div>
     </div>
 
     <div class="container">
-        <h2> With reecit you can handle  feature such as</h2>
+        <h3> With reecit you can handle  feature such as</h3>
         <section class="features">
             <div class="feature">
                 <span class="material-icons">create</span>
