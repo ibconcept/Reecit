@@ -1,6 +1,7 @@
 reecit/
 │
 ├── app.py
+├── landing_page
 ├── forms.py #forms.py defines how data is collected from users.
 ├── models.py #models.py defines how data is stored in the database.
 ├── templates/
