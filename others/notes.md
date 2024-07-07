@@ -1,6 +1,10 @@
 9. Add Additional Routes
 If you plan to expand your app, you might need additional routes. Add them to app.py and ensure you handle different scenarios based on your requirements.
 
+add qr code generator and scanner//
+
+
+
 10. Configure Nginx (for Production)
 Make sure your Nginx configuration is correctly set up for your domain and points to your Flask app.
 
