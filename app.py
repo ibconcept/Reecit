@@ -1,12 +1,15 @@
+#app.py
+
 from flask import Flask, render_template, request, redirect, url_for, flash
 from forms import ReceiptForm
 from models import db, Receipt
 from datetime import datetime
+from config import Config  # Import Config class from config.py
 
 def create_app():
     """Application factory function."""
     app = Flask(__name__)
-    app.config.from_object('config.Config')  # Load configuration from config.py
+    app.config.from_object(Config)  # Load configuration from Config class
 
     db.init_app(app)
 
@@ -63,4 +66,4 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
-    app.run(debug=True, port=5000)  # Run the app in debug mode on port 5000
+    app.run(debug=True, port=5000)

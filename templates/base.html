@@ -13,16 +13,23 @@
 </head>
 
 <body>
+    
+<header>
+    <img class="logo" src="{{ url_for('static', filename='images/logo.PNG') }}" alt="reecit Logo">
     <h1>Welcome to Reecit!</h1>
-    <h3>Make your document easy</h3>
-    <div class="border"><br>
+    <h2>BY JUST FILLING A FORM...</h2>
+    <h3>Make your documents easy!</h3>
+</header>
+    
+    <div class="border"> 
         <p>Get started with:</p>
-       <div><a class="button" href="{{ url_for('index') }}"> Home </a></div> 
+       <a class="button" href="{{ url_for('index') }}"> Get Started </a>
         <a class="button" href="{{ url_for('new_receipt') }}">Create New Receipt</a>
         <a class="button" href="{{ url_for('list_receipts') }}">My Receipts</a>
-        
-</div>
-    {% block content %}{% endblock %}
+        <a class="button" href="https://ibconcept.github.io/Reecit"> About </a>
+    </div>
+    {% block content %} {% endblock %}
+
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
     <footer class="border">

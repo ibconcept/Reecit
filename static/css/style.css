@@ -33,6 +33,15 @@ width: 11vw;
 border-radius: 22px;
   }
 
+header, footer {
+  background-color: var(--primary-color);
+  padding: 13px;
+}
+h1 {
+  font-weight: 900;
+  font-size: xx-large;
+}
+
    h2 {    
     color: var(--accent-color);
     border-radius: 5px;
@@ -46,19 +55,20 @@ border-radius: 22px;
   select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #00b0ff;
+    border: 2px solid #00b0ff;
     border-radius: 5px;
     box-sizing: border-box;
   }
   
   /* Buttons */
   .button {
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: #fff;
-    text-decoration: none;
-    border: none;
+    text-decoration: none; 
+    text-align: center;
+    font-weight: 800;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
