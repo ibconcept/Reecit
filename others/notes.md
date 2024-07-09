@@ -1,7 +1,7 @@
 9. Add Additional Routes
 If you plan to expand your app, you might need additional routes. Add them to app.py and ensure you handle different scenarios based on your requirements.
 
-add qr code generator and scanner//
+add QR qr code generator and scanner//
 
 
 
