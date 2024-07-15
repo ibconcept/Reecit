@@ -1,0 +1,29 @@
+<!-- receipt.html for Viewing Receipt -->
+
+
+
+{% extends "base.html" %}
+
+{% block title %}
+    reecit - Receipt
+{% endblock %}
+
+{% block content %}
+    <h1>Receipt</h1>
+    <div style="border: 1px solid #000; padding: 20px; max-width: 600px; margin: auto;">
+
+        <div style="text-align: {{ receipt.alignment }}; color: {{ receipt.color }};">
+            <h2>{{ receipt.name }}</h2>
+            <p><strong>Amount:</strong> ${{ receipt.amount }}</p>
+            <p><strong>Items:</strong></p>
+            <p>{{ receipt.items }}</p>
+            <p><strong>Date:</strong> {{ receipt.date.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+        </div>
+
+        {% if receipt.color %}
+            <div style="background-color: {{ receipt.color }}; height: 20px;"></div>
+        {% endif %}
+    </div>
+
+    <a href="{{ url_for('list_receipts') }}">Back to Receipt List</a>
+{% endblock %}

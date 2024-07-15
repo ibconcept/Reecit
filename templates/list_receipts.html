@@ -1,3 +1,5 @@
+<!-- list_receipts.html -->
+
 {% extends "base.html" %}
 
 {% block title %}
@@ -15,29 +17,21 @@
                 <th>Date</th>
                 <th>Items</th>
                 <th>Image</th>
-                <th>PDF</th> <!-- Add a column for the PDF link -->
             </tr>
         </thead>
         <tbody>
             {% for receipt in receipts %}
             <tr>
-                <td>{{ receipt.id }}</td>
-                <td>{{ receipt.name }}</td>
-                <td>${{ receipt.amount }}</td>
-                <td>{{ receipt.date }}</td>
-                <td>{{ receipt.items }}</td>
+                <td><a href="{{ url_for('render_receipt', receipt_id=receipt.id) }}">{{ receipt.id }}</a></td>
+                <td><a href="{{ url_for('render_receipt', receipt_id=receipt.id) }}">{{ receipt.name }}</a></td>
+                <td><a href="{{ url_for('render_receipt', receipt_id=receipt.id) }}"> ${{ receipt.amount }}</a></td>
+                <td><a href="{{ url_for('render_receipt', receipt_id=receipt.id) }}">{{ receipt.date.strftime('%Y-%m-%d') }}</a></td>
+                <td><a href="{{ url_for('render_receipt', receipt_id=receipt.id) }}">{{ receipt.items[:50] }}{% if receipt.items|length > 50 %}...{% endif %}</a></td>
                 <td>
                     {% if receipt.image %}
                     <a href="{{ url_for('static', filename='uploads/' + receipt.image) }}" target="_blank">View Image</a>
                     {% else %}
                     No Image
-                    {% endif %}
-                </td>
-                <td>
-                    {% if receipt.pdf_url %}
-                    <a href="{{ receipt.pdf_url }}" target="_blank">View PDF</a>
-                    {% else %}
-                    No PDF
                     {% endif %}
                 </td>
             </tr>
