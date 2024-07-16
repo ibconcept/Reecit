@@ -1,3 +1,15 @@
+
+introduce apis
+flask login
+embed fonts choose font on forms.py
+
+delete update edit receipt
+implement receipt size , or repot form etc , start with cash sale receit , quotation, report from , diagnosis, 
+
+
+
+
+
 9. Add Additional Routes
 If you plan to expand your app, you might need additional routes. Add them to app.py and ensure you handle different scenarios based on your requirements.
 
