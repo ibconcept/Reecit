@@ -1,4 +1,14 @@
 
+need one pipeline for all
+vue or nuxt js is for kazi
+php is for 2 let 
+firebase check which one---
+postgress-- chcek
+
+intro due tickets, and other docs for receipt//
+stikas,, let check
+
+subscribe to new letter for kazi
 introduce apis
 flask login
 embed fonts choose font on forms.py
