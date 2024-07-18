@@ -1,11 +1,12 @@
-
-need one pipeline for all
+=====
+need one pipeline for all=========
+=======
 safe-submit app:- (collect feedback from forms since most gmail will not let it do and its hard to configure ,,mailing or messaging sms for corporates feedback)
-vue or nuxt js is for kazi
+<!-- vue or nuxt js is for kazi -->
 php is for 2 let 
 react and django --
-firebase check which one---
-postgress-- chcek
+<!-- firebase check which one---
+postgress-- check -->
 smartskool-php lavarel with vue
 
 
