@@ -8,7 +8,7 @@ react and django --
 <!-- firebase check which one---
 postgress-- check -->
 smartskool-php lavarel with vue
-
+,
 
 
 intro due tickets, and other docs for receipt//
