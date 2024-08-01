@@ -1,3 +1,9 @@
+add more items to the receipt
+add company header//,, add new model for new company
+//
+add templates to start with//
+//
+
 =====
 need one pipeline for all=========
 =======
